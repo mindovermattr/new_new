@@ -1,7 +1,7 @@
 import { Controller, Get } from '@nestjs/common';
 import { ApiOkResponse, ApiOperation, ApiTags } from '@nestjs/swagger';
-import { UsersService } from './users.service';
-import { AmoUserMappedResponseDto } from './dto/amo-users.dto';
+import { UsersService } from './users.service.js';
+import { AmoUserMappedResponseDto } from './dto/amo-users.dto.js';
 
 @ApiTags('users')
 @Controller('users')

@@ -7,8 +7,8 @@ import {
   ApiTags,
 } from '@nestjs/swagger';
 import type { FastifyReply } from 'fastify';
-import { OAuthQueryDto } from './dto/oauth-query.dto';
-import { OauthService } from './oauth.service';
+import { OAuthQueryDto } from './dto/oauth-query.dto.js';
+import { OauthService } from './oauth.service.js';
 
 @ApiTags('oauth')
 @Controller('oauth')

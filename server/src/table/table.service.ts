@@ -1,8 +1,8 @@
 import { BadRequestException, Injectable } from '@nestjs/common';
-import { LeadsService } from '../leads/leads.service';
-import { UsersService } from '../users/users.service';
-import { PipelinesService } from '../pipelines/pipelines.service';
-import { GetFilterViewDto } from './dto/get-filter-view.dto';
+import { LeadsService } from '../leads/leads.service.js';
+import { UsersService } from '../users/users.service.js';
+import { PipelinesService } from '../pipelines/pipelines.service.js';
+import { GetFilterViewDto } from './dto/get-filter-view.dto.js';
 
 @Injectable()
 export class TableService {

@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { AxiosRequestConfig } from 'axios';
-import { AmoTokenRequestDto, AmoTokenResponseDto } from '../../oauth/dto/amo-token.dto';
-import { AmoCrmPublicHttpClient } from '../amo-public-http-client.service';
+import { AmoTokenRequestDto, AmoTokenResponseDto } from '../../oauth/dto/amo-token.dto.js';
+import { AmoCrmPublicHttpClient } from '../amo-public-http-client.service.js';
 
 @Injectable()
 export class OauthGateway {

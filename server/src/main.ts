@@ -1,7 +1,9 @@
 import { NestFactory } from '@nestjs/core';
-import { AppModule } from './app.module';
 import { FastifyAdapter, NestFastifyApplication } from '@nestjs/platform-fastify';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
+import fastifySwagger from '@fastify/swagger';
+import fastifySwaggerUi from '@fastify/swagger-ui';
+import { AppModule } from './app.module.js';
 
 async function bootstrap() {
   const app = await NestFactory.create<NestFastifyApplication>(AppModule, new FastifyAdapter());
@@ -21,12 +23,12 @@ async function bootstrap() {
 
   const document = SwaggerModule.createDocument(app, config);
 
-  await app.register(require('@fastify/swagger'), {
+  await app.register(fastifySwagger, {
     mode: 'static',
     specification: { document },
   });
 
-  await app.register(require('@fastify/swagger-ui'), {
+  await app.register(fastifySwaggerUi, {
     routePrefix: '/api/docs',
   });
 

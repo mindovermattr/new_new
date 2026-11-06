@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
-import { LeadGateway, PipelineGateway, UserGateway } from './gateways';
+import { LeadGateway, PipelineGateway, UserGateway } from './gateways/index.js';
 import { AxiosRequestConfig } from 'axios';
-import { AmoOAuthService } from './amo-oauth.service';
+import { AmoOAuthService } from './amo-oauth.service.js';
 
 @Injectable()
 export class AmoService {

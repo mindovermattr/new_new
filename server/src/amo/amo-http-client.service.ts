@@ -1,8 +1,8 @@
 import { Injectable } from '@nestjs/common';
 import axios, { AxiosInstance, AxiosRequestConfig, isAxiosError } from 'axios';
 import { ConfigService } from '@nestjs/config';
-import { TokenRepository } from './database/repositories/amo-token.repository';
-import { AmoOAuthService } from './amo-oauth.service';
+import { TokenRepository } from './database/repositories/amo-token.repository.js';
+import { AmoOAuthService } from './amo-oauth.service.js';
 
 @Injectable()
 export class AmoCrmHttpClient {

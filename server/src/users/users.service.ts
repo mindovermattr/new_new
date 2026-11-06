@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { AmoService } from '../amo/amo.service';
+import { AmoService } from '../amo/amo.service.js';
 
 @Injectable()
 export class UsersService {

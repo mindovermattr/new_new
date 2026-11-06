@@ -1,7 +1,7 @@
 import { Controller, Get } from '@nestjs/common';
 import { ApiOkResponse, ApiOperation, ApiTags } from '@nestjs/swagger';
-import { PipelinesService } from './pipelines.service';
-import { AmoCrmPipelinesResponseDto } from './dto/amo-pipelines.dto';
+import { PipelinesService } from './pipelines.service.js';
+import { AmoCrmPipelinesResponseDto } from './dto/amo-pipelines.dto.js';
 
 @ApiTags('pipelines')
 @Controller('pipelines')

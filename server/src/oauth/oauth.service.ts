@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { randomBytes } from 'node:crypto';
-import { AmoService } from '../amo/amo.service';
+import { AmoService } from '../amo/amo.service.js';
 import { ConfigService } from '@nestjs/config';
 
 @Injectable()

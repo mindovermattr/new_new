@@ -1,16 +1,16 @@
 import { HttpModule } from '@nestjs/axios';
 import { Module } from '@nestjs/common';
 import { ConfigModule, ConfigService } from '@nestjs/config';
-import { LeadsModule } from './leads/leads.module';
-import { OauthModule } from './oauth/oauth.module';
-import { UsersModule } from './users/users.module';
-import { PipelinesModule } from './pipelines/pipelines.module';
-import { AmoModule } from './amo/amo.module';
+import { LeadsModule } from './leads/leads.module.js';
+import { OauthModule } from './oauth/oauth.module.js';
+import { UsersModule } from './users/users.module.js';
+import { PipelinesModule } from './pipelines/pipelines.module.js';
+import { AmoModule } from './amo/amo.module.js';
 import Joi from 'joi';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { EnvSchema } from './env.schema';
-import { AmoTokenEntity } from './amo/database/amo-token.entity';
-import { TableModule } from './table/table.module';
+import { EnvSchema } from './env.schema.js';
+import { AmoTokenEntity } from './amo/database/amo-token.entity.js';
+import { TableModule } from './table/table.module.js';
 
 @Module({
   imports: [

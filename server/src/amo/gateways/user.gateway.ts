@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
-import { AmoCrmHttpClient } from '../amo-http-client.service';
-import { AmoUserResponseDto } from '../../users/dto/amo-users.dto';
+import { AmoCrmHttpClient } from '../amo-http-client.service.js';
+import { AmoUserResponseDto } from '../../users/dto/amo-users.dto.js';
 import { AxiosRequestConfig } from 'axios';
 
 @Injectable()

@@ -2,17 +2,16 @@
 
 Бэкенд тестового задания: OAuth-авторизация в amoCRM, хранение токенов и проксирование запросов к amoCRM API v4.
 
-Стек: NestJS 11, Prisma 7 + PostgreSQL, Axios, class-validator.
+Стек: NestJS 12 (ESM), TypeORM 1 + PostgreSQL, Axios. Требуется Node.js >= 20.19.
 
 ## Запуск
 
-Для первого запуска необходимо инициалзировать БД. Для этого настройте окружение в .env и выполните команды:
+Для первого запуска необходимо инициализировать БД. Для этого настройте окружение в `.env` и выполните команды из корня проекта:
 
 ```bash
 npm i
 
-npx prisma migrate dev
-npx prisma generate
+npm run migration:run -w server
 ```
 
 Запуск приложения:
@@ -92,7 +91,9 @@ npm run seed:leads -w server
 | `npm run start:dev` | dev-режим с watch |
 | `npm run build` | сборка NestJS |
 | `npm run start:prod` | запуск собранного приложения |
-| `npm run lint` | eslint |
+| `npm run lint` | oxlint |
+| `npm run migration:generate` | сгенерировать ESM-миграцию TypeORM |
+| `npm run migration:run` | применить миграции |
 | `npm run seed:leads` | создать тестовые лиды |
 
 ## Что сделал бы по-другому в prod версии

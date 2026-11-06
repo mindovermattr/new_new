@@ -1,9 +1,9 @@
 import { Module } from '@nestjs/common';
-import { TableService } from './table.service';
-import { TableController } from './table.controller';
-import { UsersModule } from '../users/users.module';
-import { PipelinesModule } from '../pipelines/pipelines.module';
-import { LeadsModule } from '../leads/leads.module';
+import { TableService } from './table.service.js';
+import { TableController } from './table.controller.js';
+import { UsersModule } from '../users/users.module.js';
+import { PipelinesModule } from '../pipelines/pipelines.module.js';
+import { LeadsModule } from '../leads/leads.module.js';
 
 @Module({
   imports: [UsersModule, PipelinesModule, LeadsModule],

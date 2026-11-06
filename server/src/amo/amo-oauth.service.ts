@@ -1,8 +1,8 @@
 import { Injectable } from '@nestjs/common';
-import { AmoTokenRequestDto } from '../oauth/dto/amo-token.dto';
+import { AmoTokenRequestDto } from '../oauth/dto/amo-token.dto.js';
 import { ConfigService } from '@nestjs/config';
-import { OauthGateway } from './gateways/oauth.gateway';
-import { TokenRepository } from './database/repositories/amo-token.repository';
+import { OauthGateway } from './gateways/oauth.gateway.js';
+import { TokenRepository } from './database/repositories/amo-token.repository.js';
 
 @Injectable()
 export class AmoOAuthService {

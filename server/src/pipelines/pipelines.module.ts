@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common';
-import { PipelinesController } from './pipelines.controller';
-import { PipelinesService } from './pipelines.service';
-import { AmoModule } from '../amo/amo.module';
+import { PipelinesController } from './pipelines.controller.js';
+import { PipelinesService } from './pipelines.service.js';
+import { AmoModule } from '../amo/amo.module.js';
 
 @Module({
   imports: [AmoModule],
